@@ -239,6 +239,7 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave debajo del navbar */
 }
 
 .header .logo {
@@ -292,7 +293,8 @@ h6 {
 
 .scrolled .header {
   padding: 10px 0;
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave debajo del navbar */
 }
 
 /* Global Header on Scroll
@@ -615,6 +617,7 @@ h6 {
   gap: 20px; /* 🔹 Espacio entre teléfono y email */
   margin-top: 5px; /* 🔹 Espaciado superior después de los contadores */
   flex-wrap: wrap; /* 🔹 Permite que se acomoden en pantallas pequeñas */
+  color: white;
 }
 
 .contact-item a:hover {
@@ -2263,4 +2266,89 @@ section,
 .custom-logo:hover {
   transform: scale(1.05); /* Aumenta ligeramente el tamaño */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.22); /* Sombra más pronunciada */
+}
+
+/*--------------------------------------------------------------
+# Top Bar GPT
+--------------------------------------------------------------*/
+
+/* Estilos de la barra superior */
+.top-bar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ocultar barra cuando se hace scroll */
+.hidden-bar {
+  transform: translateY(-100%);
+}
+
+/* Ajustar el navbar cuando la barra está oculta */
+.navbar.scrolled {
+  padding-top: 10px;
+}
+
+/* Contenedor de la barra */
+.top-bar .container {
+  display: flex;
+  justify-content: flex-end; /* Todo alineado a la derecha */
+  align-items: center;
+  gap: 20px; /* Espacio entre los bloques */
+  width: 100%;
+}
+
+/* Contact Info */
+.top-bar .contact-info {
+  display: flex;
+  gap: 20px; /* Espacio entre los ítems */
+  margin-left: auto; /* Empuja la info de contacto hacia la derecha */
+}
+
+.top-bar .contact-info a {
+  color: white;
+  font-size: 14px;
+  /*font-weight: bold;*/
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espacio entre el ícono y el texto */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Resplandor en hover */
+.top-bar .contact-info a:hover {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+/* Social Links */
+.top-bar .social-links {
+  display: flex;
+  gap: 10px; /* Espaciado entre iconos */
+}
+
+.top-bar .social-links a {
+  color: white;
+  font-size: 15px; /* Íconos más grandes */
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Efecto resplandeciente en hover */
+.top-bar .social-links a:hover {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none; /* Oculta la barra en dispositivos móviles */
+  }
 }
