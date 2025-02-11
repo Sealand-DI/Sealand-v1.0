@@ -56,6 +56,36 @@
 
   <body class="index-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
+      <!-- Top Bar con Contact Info-->
+      <div class="top-bar">
+        <div class="container">
+          <div class="contact-info">
+            <!--
+            <a href=""><i class="fa-solid fa-trophy"></i>Relevant Works</a>
+            <a href=""
+              ><i class="fa-solid fa-handshake"></i>Corporate Responsability</a
+            >
+            -->
+            <a href="tel:+218920106578"
+              ><i class="fas fa-phone"></i>+218 92 010 6578</a
+            >
+            <a href="https://wa.me/34607651430" target="_blank"
+              ><i class="fab fa-whatsapp"></i> +34 607 651 430</a
+            >
+            <a href="mailto:info@sealand.ly"
+              ><i class="fas fa-envelope"></i>info@sealand.ly</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
         style="height: auto; min-height: 100px"
@@ -95,6 +125,7 @@
                     >Diving, Underwater Operations and Subsea Engineering</a
                   >
                 </li>
+                <li><a href="#">Marine Terminal Management</a></li>
                 <li><a href="#">Calm Floating Buoy Life Cycle Support</a></li>
                 <li><a href="#">Aids to Navigation & Coastal Buoyage</a></li>
                 <li><a href="#">Fleet in Service Support</a></li>
@@ -340,6 +371,9 @@
                   </div>
                 </div>
                 <!-- End Stats Item -->
+
+                <!-- Contact Info en Hero-->
+                <!--
                 <div class="contact-info">
                   <div class="contact-item">
                     <i class="fa-solid fa-phone" style="font-size: 14px"></i>
@@ -365,6 +399,7 @@
                     >
                   </div>
                 </div>
+                
                 <div class="contact-info">
                   <div class="contact-item">
                     <i class="fa-solid fa-trophy" style="font-size: 14px"></i>
@@ -381,6 +416,7 @@
                     >
                   </div>
                 </div>
+                -->
               </div>
             </div>
           </div>
@@ -1628,5 +1664,30 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Oculta la barra superior del Hero -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let topBar = document.querySelector(".top-bar");
+        let navbar = document.querySelector(".navbar");
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+          let scrollTop = window.scrollY;
+
+          if (scrollTop > lastScrollTop) {
+            // Oculta la barra cuando el usuario baja
+            topBar.classList.add("hidden-bar");
+            navbar.classList.add("scrolled");
+          } else {
+            // Muestra la barra cuando el usuario sube
+            topBar.classList.remove("hidden-bar");
+            navbar.classList.remove("scrolled");
+          }
+
+          lastScrollTop = scrollTop;
+        });
+      });
+    </script>
   </body>
 </html>
