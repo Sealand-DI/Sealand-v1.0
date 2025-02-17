@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>
       Sealand North Africa - Asset Integrity Solutions in the Maritime
       Environment
@@ -84,6 +85,21 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-x-twitter"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
+            <!-- Ícono de traducción con menú desplegable -->
+            <div class="language-dropdown">
+              <i class="bi bi-translate fs-5"></i>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="es/index.html">🇪🇸 Español</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html">🇬🇧 English</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ca/index.html">🇦🇩 Català</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -110,7 +126,7 @@
               <span class="nav-underline"></span>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="about.html ">About Us</a>
               <span class="nav-underline"></span>
             </li>
             <li>
@@ -887,7 +903,8 @@
         <!-- End Section Title -->
 
         <div class="container">
-          <div class="row gy-4 align-items-center features-item">
+          <div class="row gy-5 align-items-center features-item gx-5 feature">
+            <!--
             <div
               class="col-md-5 d-flex align-items-center"
               data-aos="zoom-out"
@@ -899,7 +916,23 @@
                 alt="Industry Expertise & Proven Experience"
               />
             </div>
-            <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            -->
+
+            <!-- Feature 1 -->
+            <div
+              class="col-md-7 d-flex align-items-center image-container"
+              data-images="assets/img/features/key11.jpg,assets/img/features/key12.jpg,assets/img/features/key13.jpg,assets/img/features/key14.jpg,assets/img/features/key15.jpg"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <img id="current-img" class="image fade-in" alt="Imagen actual" />
+              <img
+                id="next-img"
+                class="image fade-out"
+                alt="Siguiente imagen"
+              />
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
               <h3>🔹 Industry Expertise & Proven Experience</h3>
               <p class="fst-italic">
                 With over 25 years in the maritime sector, we provide
@@ -924,20 +957,23 @@
           </div>
           <!-- Features Item -->
 
-          <div class="row gy-4 align-items-center features-item">
+          <!-- Feature 2 -->
+          <div class="row gy-4 align-items-center features-item gx-5">
             <div
-              class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+              class="col-md-7 order-2 d-flex align-items-center image-container"
+              data-images="assets/img/features/key21.jpg,assets/img/features/key22.jpg,assets/img/features/key23.jpg,assets/img/features/key24.jpg,assets/img/features/key25.jpg"
               data-aos="zoom-out"
               data-aos-delay="200"
             >
+              <img id="current-img" class="image fade-in" alt="Imagen actual" />
               <img
-                src="assets/img/features/key2.jpg"
-                class="img-fluid about-img"
-                alt="Comprehensive Marine Services"
+                id="next-img"
+                class="image fade-out"
+                alt="Siguiente imagen"
               />
             </div>
             <div
-              class="col-md-7 order-2 order-md-1"
+              class="col-md-6 order-md-1"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -967,15 +1003,22 @@
           </div>
           <!-- Features Item -->
 
-          <div class="row gy-4 align-items-center features-item">
-            <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+          <!-- Feature 3 -->
+          <div class="row gy-4 align-items-center features-item gx-5">
+            <div
+              class="col-md-7 d-flex align-items-center image-container"
+              data-images="assets/img/features/key31.jpg,assets/img/features/key32.jpg,assets/img/features/key33.jpg,assets/img/features/key34.jpg,assets/img/features/key35.jpg"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <img id="current-img" class="image fade-in" alt="Imagen actual" />
               <img
-                src="assets/img/features/key3.jpg"
-                class="img-fluid about-img"
-                alt="Advanced Risk & Safety Management"
+                id="next-img"
+                class="image fade-out"
+                alt="Siguiente imagen"
               />
             </div>
-            <div class="col-md-7" data-aos="fade-up">
+            <div class="col-md-6" data-aos="fade-up">
               <h3>🔹 Advanced Risk & Safety Management</h3>
               <p>
                 We implement state-of-the-art risk mitigation strategies,
@@ -1000,18 +1043,26 @@
           </div>
           <!-- Features Item -->
 
-          <div class="row gy-4 align-items-center features-item">
+          <!-- Feature 4 -->
+          <div class="row gy-4 align-items-center features-item gx-5">
             <div
-              class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+              class="col-md-7 order-2 d-flex align-items-center image-container"
+              data-images="assets/img/features/key41.jpg,assets/img/features/key42.jpg,assets/img/features/key43.jpg,assets/img/features/key44.jpg,assets/img/features/key45.jpg"
               data-aos="zoom-out"
+              data-aos-delay="200"
             >
+              <img id="current-img" class="image fade-in" alt="Imagen actual" />
               <img
-                src="assets/img/features/key4.jpg"
-                class="img-fluid about-img"
-                alt="Sustainable & Environmentally Responsible Practices"
+                id="next-img"
+                class="image fade-out"
+                alt="Siguiente imagen"
               />
             </div>
-            <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <div
+              class="col-md-6 order-md-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h3 style="text-align: right">
                 Sustainable & Environmentally Responsible Practices🔹
               </h3>
@@ -1043,15 +1094,22 @@
           </div>
           <!-- Features Item -->
 
-          <div class="row gy-4 align-items-center features-item">
-            <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+          <!-- Feature 5 -->
+          <div class="row gy-4 align-items-center features-item gx-5">
+            <div
+              class="col-md-7 d-flex align-items-center image-container"
+              data-images="assets/img/features/key51.jpg,assets/img/features/key52.jpg,assets/img/features/key53.jpg,assets/img/features/key54.jpg,assets/img/features/key55.jpg"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <img id="current-img" class="image fade-in" alt="Imagen actual" />
               <img
-                src="assets/img/features/key5.jpg"
-                class="img-fluid about-img"
-                alt="Advanced Risk & Safety Management"
+                id="next-img"
+                class="image fade-out"
+                alt="Siguiente imagen"
               />
             </div>
-            <div class="col-md-7" data-aos="fade-up">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
               <h3>🔹 Cutting-Edge Technology & Innovation</h3>
               <p>
                 We utilize advanced equipment and data-driven strategies to
@@ -1076,20 +1134,23 @@
           </div>
           <!-- Features Item -->
 
-          <div class="row gy-4 align-items-center features-item">
+          <!-- Feature 6 -->
+          <div class="row gy-4 align-items-center features-item gx-5">
             <div
-              class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+              class="col-md-5 order-md-2 d-flex align-items-center image-container"
+              data-images="assets/img/features/key61.jpg,assets/img/features/key62.jpg,assets/img/features/key63.jpg,assets/img/features/key64.jpg,assets/img/features/key65.jpg"
               data-aos="zoom-out"
               data-aos-delay="200"
             >
+              <img id="current-img" class="image fade-in" alt="Imagen actual" />
               <img
-                src="assets/img/features/key6.jpg"
-                class="img-fluid about-img"
-                alt="Comprehensive Marine Services"
+                id="next-img"
+                class="image fade-out"
+                alt="Siguiente imagen"
               />
             </div>
             <div
-              class="col-md-7 order-2 order-md-1"
+              class="col-md-6 order-md-1"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -1689,6 +1750,58 @@
           }
 
           lastScrollTop = scrollTop;
+        });
+      });
+    </script>
+
+    <!-- Cambio imágenes automático en Features-1 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageContainers = document.querySelectorAll(".image-container");
+
+        imageContainers.forEach((container) => {
+          const images = container.getAttribute("data-images").split(",");
+          let currentIndex = 0;
+
+          const imgElements = container.querySelectorAll("img");
+
+          // Inicializar imágenes
+          imgElements[0].src = images[0];
+          imgElements[1].src = images[1];
+
+          setInterval(() => {
+            const nextIndex = (currentIndex + 1) % images.length;
+
+            // Mantener la imagen anterior visible hasta que la nueva aparezca
+            imgElements[1].src = images[nextIndex];
+            imgElements[1].style.opacity = "1"; // Hacer fade-in de la nueva imagen
+            imgElements[1].style.zIndex = 2;
+
+            // Esperar a que termine la transición antes de ocultar la anterior
+            setTimeout(() => {
+              imgElements[0].src = images[nextIndex]; // Cambiar la imagen anterior a la nueva
+              imgElements[0].style.zIndex = 2;
+              imgElements[1].style.zIndex = 1;
+              imgElements[1].style.opacity = "0"; // Hacer fade-out de la imagen anterior
+            }, 1000); // Tiempo de duración del fade
+
+            currentIndex = nextIndex;
+          }, 3000); // Cambio de imagen cada 4 segundos
+        });
+      });
+    </script>
+    <!-- JavaScript para abrir/cerrar el menú al hacer clic -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdown = document.querySelector(".language-dropdown");
+        dropdown.addEventListener("click", function (event) {
+          event.stopPropagation();
+          this.classList.toggle("active");
+        });
+
+        // Cerrar el menú si se hace clic fuera
+        document.addEventListener("click", function () {
+          dropdown.classList.remove("active");
         });
       });
     </script>
