@@ -1163,7 +1163,7 @@ section,
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 .featured-services .service-item .readmore {
@@ -2351,4 +2351,90 @@ section,
   .top-bar {
     display: none; /* Oculta la barra en dispositivos móviles */
   }
+}
+
+/*--------------------------------------------------------------
+# Image Container Features GPT
+--------------------------------------------------------------*/
+.image-container {
+  position: relative;
+  width: 600px; /* Ajusta el tamaño según lo necesites */
+  height: 400px; /* Ajusta el tamaño según lo necesites */
+  overflow: hidden;
+  border: 5px solid #ccc; /* Mantiene el marco */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Mantiene la sombra */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin dejar franjas blancas */
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  z-index: 2;
+}
+
+.fade-out {
+  opacity: 0;
+  z-index: 1;
+}
+
+/*--------------------------------------------------------------
+# Selector de Idioma GPT
+--------------------------------------------------------------*/
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0); /* Fondo completamente transparente */
+  border-radius: 5px;
+  padding: 5px 0;
+  display: none;
+  min-width: 120px;
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: white; /* Texto blanco para mejor visibilidad */
+  display: block;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Suave efecto hover con transparencia */
+}
+
+/* Mostrar menú al hacer clic */
+.language-dropdown .dropdown-menu {
+  display: none;
+  backdrop-filter: blur(10px); /* Efecto difuminado */
+}
+
+.language-dropdown.active .dropdown-menu {
+  display: block;
 }
