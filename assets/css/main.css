@@ -1128,6 +1128,13 @@ section,
   font-weight: 600;
 }
 
+/*Oculta los contadores del Hero para pantallas pequeñas GPT */
+@media (max-width: 768px) {
+  #hero .row[data-aos="fade-up"] {
+    display: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
